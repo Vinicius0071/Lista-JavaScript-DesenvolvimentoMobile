@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Atividade 5</title>
+  <meta charset="UTF-8" />
+  <script type="text/javascript" src="atividade5.js"></script>
+</head>
+
+<body>
+  <div id="cadastro">
+    <form method="post" name="dados">
+      <h1>Cadastro</h1>
+
+      <p>
+        <label for="user_cad">Usuário</label>
+        <input id="user_cad" name="user_cad" required="required" type="text" placeholder="Usuario" />
+      </p>
+      <p>
+        <label for="senha_cad">Senha</label>
+        <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="6 a 10 caracteres" />
+      </p>
+      <p>
+        <label for="confirm_senha_cad">Confirme sua senha</label>
+        <input id="confirm_senha_cad" name="confirm_senha_cad" required="required" type="password"
+          placeholder="6 a 10 caracteres" />
+      </p>
+      <p>
+        <input type="submit" name="submit" value="Cadastrar" onclick="return enviarDados()" />
+      </p>
+    </form>
+  </div>
+
+</body>
+
+</html>

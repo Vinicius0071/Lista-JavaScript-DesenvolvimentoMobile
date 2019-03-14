@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atividade 8</title>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" src="atividade8.js"></script>
+    <style>
+        body {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 11px;
+        }
+
+        .formulario {
+            padding-top: 10px;
+            padding-left: 10px;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form name="formcadastro" class="formulario">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" required="required" type="text" /></br></br>
+            <label for="Pessoa">Pessoa</label>
+            <input name="pessoa" type="radio" onclick="ativaCampo('fisica');" />Física</br>
+            <input name="pessoa" type="radio" onclick="ativaCampo('juridica');" />Jurídica</br></br>
+            <label for="cpf">CPF</label>
+            <input id="cpf" name="cpf" required="required" type="text" /></br></br>
+            <label for="cnpj">CNPJ</label>
+            <input id="cnpj" name="cnpj" required="required" type="text" /></br></br>
+            <label for="data_nasc">Data de Nascimento</label>
+            <input id="data_nasc" name="data_nasc" required="required" type="date" /></br></br>
+            <label for="endereco">Endereço</label>
+            <input id="endereco" name="endereco" required="required" type="text" /></br></br>
+            <label for="cep">CEP</label>
+            <input id="cep" name="cep" required="required" type="text" value="" size="10" maxlength="9"
+                onkeypress="return validaNumeros(event)" onblur="validaCep(this.value);" /></br></br>
+            <label for="telefone">Telefone</label>
+            <input id="telefone" name="telefone" required="required" type="tel" /></br></br>
+            <label for="email">Email</label>
+            <input id="email" name="email" required="required" type="email" /></br></br>
+        </form>
+    </div>
+</body>
+
+</html>
